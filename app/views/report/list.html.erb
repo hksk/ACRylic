@@ -1,0 +1,41 @@
+<br/><br/>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+        <%= will_paginate @entries %>
+    </div>
+  </div>
+  <br/>
+        <table align="center" width="90%">
+        	<tr>
+            <th> </th>
+            <th> </th>
+            <th><%= fa_icon "id-card" %></th>
+        		<th><%= fa_icon "history" %></th>
+        		<th><%= fa_icon "gift" %></th>
+        		<th><%= fa_icon "android" %></th>
+        		<th><%= fa_icon "mobile" %></th>
+        		<th><%= fa_icon "fire" %></th>
+        	</tr>
+        	<% @entries.each do |entry| %>
+        		<tr>
+            <th><%=link_to (fa_icon "search"),report_detail_path(entry.id) %> </th>
+            <th><%=link_to (fa_icon "trash"), report_delete_path(entry.id) %> </th>
+        			<td><%= entry.id %></td>
+        			<td><%= entry.created_at %></td>
+        			<td><%= entry.content["APP_VERSION_NAME"] rescue "" %></td>
+        			<td><%= entry.content["ANDROID_VERSION"] rescue "" %></td>
+        			<td>
+        				<%= entry.content["BUILD"]["MANUFACTURER"] rescue "" %>
+        				<%= entry.content["BUILD"]["MODEL"] rescue "" %>
+        			</td>
+        			<td ><pre style="margin-left: 10px;" align="left"><%= entry.content["STACK_TRACE"] rescue "" %></pre></td>
+        		</tr>	
+        	<% end %>
+
+        </table>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+        <%= will_paginate @entries %>
+    </div>
+  </div>

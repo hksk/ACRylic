@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>STACK TRACE</h2>
+      <pre>
+<%=@stacktrace%>
+      </pre>
+    <h2>FULL TRACE</h2>
+      <%= (ap @data).html_safe %> 
+  </body>
+</html>

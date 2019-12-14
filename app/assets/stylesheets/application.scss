@@ -1,0 +1,24 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ * 
+ *= require_self 
+ */
+@import "bootstrap";
+@import "font-awesome";
+.pagination a,.pagination span, .pagination .current {
+	padding: 10px;
+}
+kbd {
+	background-color:white;
+}
+h1 { font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre {font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+p , td, th { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre {  font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
