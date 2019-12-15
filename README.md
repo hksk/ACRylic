@@ -3,7 +3,13 @@
 ACRA Backend in RoR 
 
 > $ bundle install 
-> $ rake manipulate:user user@example.com 123456
+> $ rake db:migrate
+
+create user
+> $ rake users:manipulate email=user@example.com password=123456
+
+simulate request
+> $ bash curl-example.sh
 
 .env example:
 
@@ -17,3 +23,9 @@ EMAIL_FROM=from@acrylic.com
 EMAIL_TO=to@acrylic.com
 EMAIL_SUBJECT="Crash Received!"
 ```
+
+* remove `REGISTER_TOKEN` to disable the email send
+* REGISTER_TOKEN is a parameter in the request to allow the insertion `?register_token=abc123`
+
+TODO:
+- Slack Integration

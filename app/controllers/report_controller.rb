@@ -44,6 +44,7 @@ class ReportController < ApplicationController
       save_record(params)
       send_email(params)
       status = 200
+      response =  'CREATED' 
     else
       Rails.logger.warn "#{params[:register_token]} == #{ENV["REGISTER_TOKEN"]}" 
     end
