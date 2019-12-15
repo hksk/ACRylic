@@ -25,7 +25,7 @@ EMAIL_SUBJECT="Crash Received!"
 ```
 
 * remove `REGISTER_TOKEN` to disable the email send
-* REGISTER_TOKEN is a parameter in the request to allow the insertion `?register_token=abc123`
+* REGISTER_TOKEN is a parameter in the request to allow the insertion `/add?register_token=abc123`
 
 TODO:
 - Slack Integration
