@@ -3,10 +3,13 @@
 ACRA Backend in RoR 
 
 > $ bundle install 
-> $ rake db:migrate
+
+> $ bundle exec rake db:migrate
 
 create user
-> $ rake users:manipulate email=user@example.com password=123456
+> $ bundle exec rake users:manipulate email=user@example.com password=123456
+
+> $ bundle exec rails s
 
 simulate request
 > $ bash curl-example.sh
