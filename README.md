@@ -34,7 +34,7 @@ TODO:
 - Slack Integration
 
 # DOCKER:
-* port change port 3000 in docker-compose.yml if you need bind other port
+* change port 3000 in docker-compose.yml if you need bind another port
 
 > $ docker-compose up -d
 
