@@ -38,6 +38,8 @@ TODO:
 
 > $ docker-compose up -d
 
+> $ docker-compose exec acrylic bundle exec rake users:manipulate email=user@example.com password=123456
+
 # PROD
 add envs (and change the values):
 ```
@@ -45,9 +47,20 @@ RAILS_MASTER_KEY="ABC"
 SECRET_KEY_BASE="DEF" 
 MY_SECRET_TOKEN="123" 
 SECRET_TOKEN="456" 
+RAILS_SERVE_STATIC_FILES=true 
+RAILS_LOG_TO_STDOUT=true
+RAILS_ENV=production
+
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_HOST=
+MYSQL_DBNAME=
 ```
 
-CONTRIBUTORS:
+
+# Powered by Geosatelital
+
+Team:
 - Erik Beltran (@hksk)
 - Luis Souto 
 - Marco Tantalean  
