@@ -32,3 +32,25 @@ EMAIL_SUBJECT="Crash Received!"
 
 TODO:
 - Slack Integration
+
+# DOCKER:
+* port change port 3000 in docker-compose.yml if you need bind other port
+
+> $ docker-compose up -d
+
+# PROD
+add envs (and change the values):
+```
+RAILS_MASTER_KEY="ABC" 
+SECRET_KEY_BASE="DEF" 
+MY_SECRET_TOKEN="123" 
+SECRET_TOKEN="456" 
+```
+
+CONTRIBUTORS:
+- Erik Beltran (@hksk)
+- Luis Souto 
+- Marco Tantalean  
+- Vanessa Bermejo 
+- Jose Saravia
+- Ismael Carrera
